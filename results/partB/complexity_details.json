@@ -1,0 +1,141 @@
+{
+  "b1": {
+    "learnable_parameters": 99569,
+    "macs": 19531808,
+    "flops": 39063616,
+    "convention": "单张 1×64×64 输入；仅 Conv2d/Linear；一次乘加计 2 FLOPs；不计 bias、BN、ReLU、pool、残差相加及 sigmoid",
+    "layers": [
+      {
+        "layer": "conv1.conv",
+        "macs": 1638400,
+        "flops": 3276800
+      },
+      {
+        "layer": "conv2.conv",
+        "macs": 13107200,
+        "flops": 26214400
+      },
+      {
+        "layer": "conv3.conv",
+        "macs": 4718592,
+        "flops": 9437184
+      },
+      {
+        "layer": "classifier.1",
+        "macs": 65536,
+        "flops": 131072
+      },
+      {
+        "layer": "classifier.4",
+        "macs": 2048,
+        "flops": 4096
+      },
+      {
+        "layer": "classifier.7",
+        "macs": 32,
+        "flops": 64
+      }
+    ]
+  },
+  "b2": {
+    "learnable_parameters": 18185,
+    "macs": 9732128,
+    "flops": 19464256,
+    "convention": "单张 1×64×64 输入；仅 Conv2d/Linear；一次乘加计 2 FLOPs；不计 bias、BN、ReLU、pool、残差相加及 sigmoid",
+    "layers": [
+      {
+        "layer": "features.0.conv",
+        "macs": 294912,
+        "flops": 589824
+      },
+      {
+        "layer": "features.1.conv",
+        "macs": 2359296,
+        "flops": 4718592
+      },
+      {
+        "layer": "features.3.conv",
+        "macs": 1179648,
+        "flops": 2359296
+      },
+      {
+        "layer": "features.4.conv",
+        "macs": 2359296,
+        "flops": 4718592
+      },
+      {
+        "layer": "features.6.conv",
+        "macs": 1179648,
+        "flops": 2359296
+      },
+      {
+        "layer": "features.7.conv",
+        "macs": 2359296,
+        "flops": 4718592
+      },
+      {
+        "layer": "fc",
+        "macs": 32,
+        "flops": 64
+      }
+    ]
+  },
+  "b3": {
+    "learnable_parameters": 77169,
+    "macs": 12648512,
+    "flops": 25297024,
+    "convention": "单张 1×64×64 输入；仅 Conv2d/Linear；一次乘加计 2 FLOPs；不计 bias、BN、ReLU、pool、残差相加及 sigmoid",
+    "layers": [
+      {
+        "layer": "stem.conv",
+        "macs": 589824,
+        "flops": 1179648
+      },
+      {
+        "layer": "block1.conv1.conv",
+        "macs": 2359296,
+        "flops": 4718592
+      },
+      {
+        "layer": "block1.conv2.conv",
+        "macs": 2359296,
+        "flops": 4718592
+      },
+      {
+        "layer": "block2.conv1.conv",
+        "macs": 1179648,
+        "flops": 2359296
+      },
+      {
+        "layer": "block2.conv2.conv",
+        "macs": 2359296,
+        "flops": 4718592
+      },
+      {
+        "layer": "block2.shortcut.conv",
+        "macs": 131072,
+        "flops": 262144
+      },
+      {
+        "layer": "block3.conv1.conv",
+        "macs": 1179648,
+        "flops": 2359296
+      },
+      {
+        "layer": "block3.conv2.conv",
+        "macs": 2359296,
+        "flops": 4718592
+      },
+      {
+        "layer": "block3.shortcut.conv",
+        "macs": 131072,
+        "flops": 262144
+      },
+      {
+        "layer": "fc",
+        "macs": 64,
+        "flops": 128
+      }
+    ]
+  }
+}

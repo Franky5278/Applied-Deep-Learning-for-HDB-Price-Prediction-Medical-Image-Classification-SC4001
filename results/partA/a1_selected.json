@@ -1,0 +1,21 @@
+{
+  "hidden_width": 256,
+  "embedding_dim": 4,
+  "best_epoch": 6,
+  "best_validation_rmse": 58743.823633973465,
+  "seed": 42,
+  "search_backend": "ray_tune_grid_search",
+  "trial_count": 25,
+  "smoke_test": false,
+  "final": {
+    "model_path": "partA/results/a1/final_seed42/model.pt",
+    "test": {
+      "rmse": 98729.07568417412,
+      "r2": 0.6637496454246403
+    },
+    "train": {
+      "rmse": 39692.99641983054,
+      "r2": 0.9378230157843406
+    }
+  }
+}

@@ -1,0 +1,2 @@
+﻿model,seeds,test_rmse_mean,test_rmse_sample_std,test_r2_mean,test_r2_sample_std
+wide_deep,5,105942.70552106077,1896.9740795374223,0.612719075933315,0.013888284929790443

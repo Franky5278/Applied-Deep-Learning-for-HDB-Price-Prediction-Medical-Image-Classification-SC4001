@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title description">
+  <title id="title">Applied Deep Learning — NTU SC4001</title>
+  <desc id="description">A navy and teal portfolio banner pairing Singapore HDB housing and price regression with an abstract chest X-ray and convolutional neural network.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071423"/>
+      <stop offset="1" stop-color="#102637"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#1EBCB2" stop-opacity=".11"/>
+      <stop offset="1" stop-color="#1EBCB2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="building" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#264C61"/>
+      <stop offset="1" stop-color="#142C40"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#4DD4D0"/>
+      <stop offset="1" stop-color="#A3F5CE"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#9DBCCC" stroke-opacity=".035"/>
+    </pattern>
+    <pattern id="windows" x="0" y="0" width="14" height="17" patternUnits="userSpaceOnUse">
+      <rect x="4" y="4" width="5" height="6" rx="1" fill="#77D6DC" fill-opacity=".38"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="420" rx="18" fill="url(#background)"/>
+  <rect width="1280" height="420" rx="18" fill="url(#grid)"/>
+  <ellipse cx="405" cy="366" rx="405" ry="230" fill="url(#glow)"/>
+  <ellipse cx="1100" cy="260" rx="260" ry="210" fill="url(#glow)"/>
+  <path d="M64 184H1216" stroke="#6C98AD" stroke-opacity=".23"/>
+  <rect x="64" y="37" width="7" height="7" rx="2" fill="#64DDD0"/>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="84" y="46" fill="#99B2C2" font-size="12" font-weight="600" letter-spacing="2.5">NTU · SC4001</text>
+    <text x="1216" y="46" text-anchor="end" fill="#6E91A5" font-size="10" letter-spacing="2.2">EXPERIMENTS / RESULTS / INTERPRETABILITY</text>
+    <text x="62" y="114" fill="#F1F8FB" font-size="49" font-weight="750" letter-spacing="1">APPLIED DEEP LEARNING</text>
+    <text x="65" y="153" fill="#A7BFCD" font-size="22" font-weight="400">HDB Price Prediction <tspan fill="#567D93">/</tspan> Medical Image Classification</text>
+
+    <text x="64" y="216" fill="#62DAD0" font-size="11" font-weight="650" letter-spacing="2.2">TABULAR REGRESSION</text>
+    <text x="810" y="216" fill="#62DAD0" font-size="11" font-weight="650" letter-spacing="2.2">COMPUTER VISION</text>
+    <text x="64" y="386" fill="#89A7BA" font-size="12">Singapore housing · MLP · Ablation · Feature importance</text>
+    <text x="810" y="386" fill="#89A7BA" font-size="12">Chest X-rays · CNNs · Architecture comparison · Grad-CAM</text>
+  </g>
+
+  <!-- Singapore housing: layered HDB blocks, corridor lines, and lit windows. -->
+  <g stroke-linejoin="round">
+    <path d="M64 352H300" stroke="#548399" stroke-opacity=".5"/>
+    <rect x="76" y="279" width="57" height="73" rx="2" fill="url(#building)" stroke="#446D83"/>
+    <rect x="80" y="283" width="49" height="62" fill="url(#windows)"/>
+    <path d="M73 279H136M81 294H128M81 311H128M81 328H128" stroke="#547F91" stroke-opacity=".55"/>
+    <rect x="147" y="250" width="66" height="102" rx="2" fill="url(#building)" stroke="#558298"/>
+    <rect x="151" y="255" width="58" height="88" fill="url(#windows)"/>
+    <path d="M144 250H216M153 267H207M153 284H207M153 301H207M153 318H207M153 335H207" stroke="#547F91" stroke-opacity=".55"/>
+    <rect x="228" y="266" width="58" height="86" rx="2" fill="url(#building)" stroke="#446D83"/>
+    <rect x="232" y="271" width="50" height="74" fill="url(#windows)"/>
+    <path d="M225 266H289M234 283H280M234 300H280M234 317H280M234 334H280" stroke="#547F91" stroke-opacity=".55"/>
+    <path d="M171 250V244H189V250" fill="none" stroke="#558298"/>
+    <path d="M98 352V339H111V352M173 352V339H187V352M250 352V339H263V352" fill="#091C2C" stroke="#547F91" stroke-opacity=".6"/>
+  </g>
+
+  <!-- A sparse regression plot keeps the quantitative identity legible. -->
+  <g fill="none">
+    <path d="M344 251V352H698" stroke="#4B7288" stroke-opacity=".5"/>
+    <path d="M345 319H698M345 286H698M433 252V352M521 252V352M609 252V352" stroke="#4B7288" stroke-opacity=".13"/>
+    <path d="M365 336C397 332 417 312 448 313S503 297 534 292 594 283 620 268 662 261 682 245" stroke="url(#signal)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M365 336C397 332 417 312 448 313S503 297 534 292 594 283 620 268 662 261 682 245V351H365Z" fill="#60DAC8" fill-opacity=".045" stroke="none"/>
+  </g>
+  <g fill="#6C91A7" fill-opacity=".5">
+    <circle cx="381" cy="324" r="3"/><circle cx="411" cy="332" r="3"/><circle cx="438" cy="300" r="3"/>
+    <circle cx="467" cy="319" r="3"/><circle cx="488" cy="297" r="3"/><circle cx="520" cy="310" r="3"/>
+    <circle cx="554" cy="275" r="3"/><circle cx="580" cy="289" r="3"/><circle cx="612" cy="257" r="3"/>
+    <circle cx="644" cy="274" r="3"/><circle cx="667" cy="255" r="3"/>
+  </g>
+  <g fill="#99F0D5" stroke="#102637" stroke-width="3">
+    <circle cx="365" cy="336" r="5"/><circle cx="448" cy="313" r="5"/><circle cx="534" cy="292" r="5"/>
+    <circle cx="620" cy="268" r="5"/><circle cx="682" cy="245" r="5"/>
+  </g>
+  <path d="M754 224V356" stroke="#507588" stroke-opacity=".27" stroke-dasharray="3 7"/>
+
+  <!-- An abstract radiograph; the vector chest is illustrative, not clinical data. -->
+  <rect x="810" y="239" width="108" height="117" rx="7" fill="#0A1B2B" stroke="#4A788A" stroke-opacity=".7"/>
+  <path d="M820 252V249H825M903 249H908V254M820 342V347H825M903 347H908V342" fill="none" stroke="#6CCEC9" stroke-opacity=".6"/>
+  <path d="M864 259V333" fill="none" stroke="#9ABBC6" stroke-opacity=".4" stroke-width="4" stroke-dasharray="3 3"/>
+  <path d="M858 262C852 264 839 274 835 286S833 318 838 328C843 334 853 333 858 326Z" fill="#53B6C2" fill-opacity=".12" stroke="#88C9D1" stroke-opacity=".65"/>
+  <path d="M870 262C876 264 889 274 893 286S895 318 890 328C885 334 875 333 870 326Z" fill="#53B6C2" fill-opacity=".12" stroke="#88C9D1" stroke-opacity=".65"/>
+  <g fill="none" stroke="#B3D6DC" stroke-opacity=".27" stroke-linecap="round">
+    <path d="M858 275Q847 275 839 284M858 286Q845 284 836 296M858 297Q844 295 835 307M858 308Q845 307 837 318M858 320Q846 319 841 327"/>
+    <path d="M870 275Q881 275 889 284M870 286Q883 284 892 296M870 297Q884 295 893 307M870 308Q883 307 891 318M870 320Q882 319 887 327"/>
+    <path d="M841 271Q850 264 858 265M887 271Q878 264 870 265"/>
+  </g>
+  <path d="M931 298H954M949 294L954 298 949 302" fill="none" stroke="#68B6BE" stroke-opacity=".65" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Feature maps resolve into a compact neural network. -->
+  <g stroke="#6397AC" stroke-opacity=".5" stroke-linejoin="round">
+    <rect x="972" y="264" width="35" height="63" rx="3" fill="#17344A"/>
+    <rect x="980" y="270" width="35" height="63" rx="3" fill="#1A4051"/>
+    <rect x="988" y="276" width="35" height="63" rx="3" fill="#1C4C58"/>
+    <path d="M999 286V330M1011 286V330M993 294H1018M993 306H1018M993 318H1018" stroke="#75D4CD" stroke-opacity=".24"/>
+  </g>
+  <g fill="none" stroke="#61B8B7" stroke-opacity=".28">
+    <path d="M1037 282L1094 269M1037 282L1094 297M1037 282L1094 325M1037 309L1094 269M1037 309L1094 297M1037 309L1094 325M1037 336L1094 269M1037 336L1094 297M1037 336L1094 325"/>
+    <path d="M1094 269L1153 282M1094 269L1153 312M1094 297L1153 282M1094 297L1153 312M1094 325L1153 282M1094 325L1153 312M1153 282L1200 297M1153 312L1200 297"/>
+  </g>
+  <g fill="#173C4A" stroke="#6CCEC9" stroke-width="1.5">
+    <circle cx="1037" cy="282" r="5"/><circle cx="1037" cy="309" r="5"/><circle cx="1037" cy="336" r="5"/>
+    <circle cx="1094" cy="269" r="6"/><circle cx="1094" cy="297" r="6"/><circle cx="1094" cy="325" r="6"/>
+    <circle cx="1153" cy="282" r="7"/><circle cx="1153" cy="312" r="7"/>
+    <circle cx="1200" cy="297" r="9" fill="#9CEED3" stroke="none"/>
+  </g>
+  <circle cx="1200" cy="297" r="15" fill="none" stroke="#9CEED3" stroke-opacity=".2"/>
+</svg>

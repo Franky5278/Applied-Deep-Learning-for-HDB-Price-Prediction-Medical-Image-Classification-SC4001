@@ -1,0 +1,11 @@
+﻿feature,mean_absolute_attribution_sgd
+floor_area_sqm,66556.1484375
+flat_model_type,45958.62890625
+remaining_lease_years,42568.35546875
+town,37955.06640625
+dist_to_dhoby,34834.9140625
+dist_to_nearest_stn,21991.2734375
+storey_range,19892.98828125
+eigenvector_centrality,9893.9326171875
+month,4824.28515625
+degree_centrality,4377.4912109375
